@@ -1,0 +1,99 @@
+:root {
+    --main-font: "Hanken Grotesk", sans-serif;
+    --pink-color: #FFA5F0;
+    --violet-color: #D269E6;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background: transparent;
+    position: fixed;
+}
+
+.navbar div {
+    display: flex;
+    gap: 40px;
+}
+
+.navbar a {
+    font-weight: 500;
+}
+
+.main {
+    height: 100vh;
+    position: relative;
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: red;
+    background-size: cover;
+    background-position: top center;
+    z-index: -1;
+}
+
+.main span, .main span {
+    color: var(--violet-color);
+}
+
+.hero {
+    height: 100vh;
+    width: 30vw;
+    margin-left: 10vw;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsor {
+    margin-top: 30px;
+    font-family: var(--main-font);
+}
+
+.sponsor img {
+    width: 120px;
+}
+
+.about-me {
+    margin-top: 100px;
+}
+
+.separator {
+    height: 1px;
+    background: black;
+}
+
+.social p {
+    margin-bottom: 0 !important; 
+}
+
+footer {
+    background: #858586;
+    color: #F8F9FD;
+}
+
+.separator2 {
+    height: 1px;
+    width: 700px;
+    margin: 10px auto;
+    background: #979797;
+}
